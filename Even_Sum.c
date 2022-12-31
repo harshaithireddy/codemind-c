@@ -11,9 +11,7 @@ int main()
     for(i=0;i<n;i++)
     {
         if(a[i]%2==0)
-        {
-            sum=sum+a[i];
-        }
+        sum=sum+a[i];
     }
     printf("%d",sum);
 }
