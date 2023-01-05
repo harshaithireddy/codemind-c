@@ -1,27 +1,25 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main()
 {
-int n,i,even=0;
-scanf("%d",&n);
-
-int a[n];
-for(i=0;i<n;i++)
-{
-    scanf("%d", &a[i]);
-}
-
-for(i = 0; i < n; i++)
-{
-    if(a[i]%2!=0)
-    {
-        even = 1;
-        break;
+    int n,i,even=0;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++)
+    { 
+        scanf("%d", &a[i]);
+        
     }
-}
-
-if(even == 1)
+    for(i = 0; i < n; i++)
+    {
+        if(a[i]%2!=0) 
+        { even = 1; 
+        break; 
+            
+        }
+    }
+    if(even == 1)
     printf("False");
-else
+    else
     printf("True");
+    
 }
