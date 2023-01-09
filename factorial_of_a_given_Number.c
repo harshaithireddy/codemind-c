@@ -7,5 +7,5 @@ int main()
     {
         fact=fact*i;
     }
-    printf("%d",fact);
+    printf("%d ",fact);
 }
