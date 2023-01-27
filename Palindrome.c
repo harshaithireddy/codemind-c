@@ -1,17 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int n,temp,r,s=0;
+    int n,r,sum=0,a;
     scanf("%d",&n);
-    temp=n;
+    a=n;
     while(n>0)
     {
         r=n%10;
-        s=s*10+r;
+        sum=r+(sum*10);
         n=n/10;
     }
-    if(temp==s)
-    printf("Palindrome");
+    if(a==sum)
+    {
+        printf("Palindrome");
+    }
     else
-    printf("Not Palindrome");
+    {
+        printf("Not Palindrome");
+    }
 }
