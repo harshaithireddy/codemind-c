@@ -3,8 +3,8 @@ int main()
 {
     int a,b,max,lcm;
     scanf("%d%d",&a,&b);
-    max=(a>b)?a:b;
-    while(a!=0 && b!=0)
+    max=(a>b) ? a : b;
+    while(1)
     {
         if(max%a==0 && max%b==0)
         {
@@ -13,5 +13,5 @@ int main()
         }
         max++;
     }
-    printf("%d ",lcm);
+    printf("%d",lcm);
 }
